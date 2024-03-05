@@ -1,9 +1,9 @@
 pipeline {
-    agent agent1
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                echo "this is the build...."
             }
         }
     }
